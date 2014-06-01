@@ -1,0 +1,10 @@
+DELIMITER @@
+DROP PROCEDURE FindAllPersona @@
+CREATE PROCEDURE tutorial.FindAllPersona
+()
+BEGIN 
+
+Select * From Persona;
+
+END @@ 
+DELIMITER ; 
