@@ -7,7 +7,6 @@
 package IntermediarioBD;
 
 import java.sql.Connection;
-import main.ConexionMySQL;
 
 /**
  *
