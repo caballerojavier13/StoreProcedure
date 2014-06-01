@@ -1,0 +1,10 @@
+DELIMITER @@
+DROP PROCEDURE FindPersona @@
+CREATE PROCEDURE tutorial.FindPersona
+(IN id INT)
+BEGIN  
+
+    Select * From Persona Where Persona.Id = id;  
+
+END @@ 
+DELIMITER ; 
