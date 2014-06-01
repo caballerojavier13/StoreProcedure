@@ -1,0 +1,9 @@
+DELIMITER @@
+DROP PROCEDURE DeletePersona @@
+CREATE PROCEDURE tutorial.DeletePersona
+(IN id INT)
+BEGIN 
+    DELETE FROM `Persona`
+    WHERE `Persona`.`Id` = id;
+END @@ 
+DELIMITER ; 
