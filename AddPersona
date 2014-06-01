@@ -1,0 +1,12 @@
+DELIMITER @@
+DROP PROCEDURE AddPersona @@
+CREATE PROCEDURE tutorial.AddPersona
+(IN nombre VARCHAR(80), IN apellido VARCHAR(100), IN domicilio VARCHAR(200),IN edad INT)
+BEGIN  
+    INSERT INTO `Persona` 
+        ( `Nombre`, `Apellido`, `Domicilio`, `Edad`)
+    VALUES 
+        (nombre,apellido,domicilio,edad);
+    
+END @@ 
+DELIMITER ; 
