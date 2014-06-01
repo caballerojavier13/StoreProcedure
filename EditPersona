@@ -1,0 +1,13 @@
+DELIMITER @@
+DROP PROCEDURE EditPersona @@
+CREATE PROCEDURE tutorial.EditPersona
+(IN id INT, IN nombre VARCHAR(80), IN apellido VARCHAR(100), IN domicilio VARCHAR(200),IN edad INT)
+BEGIN 
+    UPDATE `Persona` SET
+        `Nombre`= nombre,
+        `Apellido`= apellido,
+        `Domicilio`= domicilio,
+        `Edad`= edad
+    WHERE `Persona`.`Id` = id;
+END @@ 
+DELIMITER ; 
